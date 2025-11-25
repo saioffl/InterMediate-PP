@@ -58,7 +58,7 @@ body{
 
 .navbar ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 4rem;
 }
@@ -69,8 +69,7 @@ body{
 }
 
 .navbar ul li a{
-    
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     font-style: normal;
     color: white;
@@ -83,10 +82,10 @@ body{
 }
 
 
-.logo {
+.logo a{
     color: white;
     font-family: 'Space Mono';
-    list-style: none;
+    text-decoration: none;
 }
 
 
@@ -149,16 +148,6 @@ body{
     margin-top: 2rem;
 }
 
-.buttons
-
-.buttons .rBtn{
-    padding: 8px;
-    
-    background-color: blue;
-    border-radius: 22px;
-    font-size: 18px;
-}
-
 
 
 
@@ -211,4 +200,41 @@ button:active {
   color: #d6d6d6;
   -webkit-transition: 100ms;
   transition: 100ms;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+}
+
+.navbar ul a::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000, #00ff00, #0000ff);
+  background-size: 100% 100%;
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  animation: rotate-96 5s linear infinite;
+  border-radius: 100vmax;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar ul a:hover::after {
+  opacity: 1;
+}
+
+@keyframes rotate-96 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
