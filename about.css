@@ -1,15 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
-.about {
-    
-    height: 100vh;
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
+.about-header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;   /* centers the h1 */
+  
+}
+
+.about-header h1 {
+  width: fit-content;        /* shrink to width of text */
+  padding: 5px 20px;
+  border-bottom: 3px solid red;
+  color: white;
+}
+
+
 .left-img{
-    width: 30%;
+    display: inline-block;     /* shrink to fit content */
     height: auto;
     border: 2px solid red;
 
 }
+
+.left-content{
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 800px;  /* prevent narrow text */
+
+    border: 2px solid red;
+}
+
+.left-content p{
+    padding: 20px;
+}
+
+

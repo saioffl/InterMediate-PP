@@ -14,9 +14,10 @@ body{
 
 
 .home{
+    text-align: center;
     scroll-behavior: smooth;
     position: relative;
-    height: 82vh;
+    height: 100vh;
     z-index: 10;
     
 }
@@ -103,12 +104,13 @@ body{
 
 
 .content {
-    width: 75%;            /* or max-width: 700px */
+    padding: 6rem;
+    align-items: center;
+    display: inline-block;        /* or max-width: 700px */
     max-width: 1912px;      /* optional but recommended */
     margin: 0 auto;        /* THIS centers the box */
     margin-top: 200px;     /* push below navbar */
     border: 2px solid red; /* your border */
-    padding: 20px;
     text-align: center;    /* centers text inside */
 }
 
@@ -156,8 +158,8 @@ body{
 }
 
 .buttons{
-    width: 55%;
-    display: flex;
+    display: inline-block;
+    align-items: center;
     justify-content: center;
     gap: 80px;
     padding: 10px 10px;
@@ -166,6 +168,9 @@ body{
     margin-top: 2rem;
 }
 
+.btn{
+    align-items: center;
+}
 
 
 
