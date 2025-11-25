@@ -33,31 +33,36 @@ body{
 
 
 
-
-.navbar{
+.navbar {
     position: fixed;
-    top: 20px;                     /* stays fixed at top */
-    left: 50%;                     /* move center of navbar to center of screen */
+    top: 20px;
+    left: 50%;
+    
     transform: translateX(-50%); 
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
+    font-family: "Space Grotesk", sans-serif; 
+    font-optical-sizing: auto; font-weight: 400; 
     font-style: normal;
     font-size: 24px;
     font-weight: 700;
-    font-style: normal;
-    width: 75%;
+    padding: 15px 40px;
+    height: 50px;
+    width: 50%;
     display: flex;
     margin: 30px auto;
     min-width: 280px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto;
-    border: 2px solid red;
+
+    background: rgba(0, 0, 0, 0.3);   /* transparent */
+    backdrop-filter: blur(10px);       /* blur effect */
+    -webkit-backdrop-filter: blur(10px);
+
     border-radius: 20px;
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(8px);
-   
+    border: 1px solid rgba(255,255,255,0.1);
+    border: 2px solid red;
+
+    z-index: 999;
 }
 
 
@@ -65,7 +70,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .navbar ul li{
@@ -247,3 +252,11 @@ button:active {
   opacity: 1;
 }
 
+.reachOut button{
+    width: 100px;
+    border-radius: 22px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-color: blueviolet;
+}
