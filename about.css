@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    
+    height: 100vh;
+}
+.left-img{
+    height: 55%;
+    width: 30%;
+    height: auto;
+    border: 2px solid red;
+
+}

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 
 *{
@@ -9,6 +10,15 @@
 }
 body{
     background-color: black;
+}
+
+
+.home{
+    scroll-behavior: smooth;
+    position: relative;
+    height: 82vh;
+    z-index: 10;
+    
 }
 #bg-video{
     opacity: 1;
@@ -21,12 +31,7 @@ body{
     z-index: -2;
 }
 
-.home{
-    scroll-behavior: smooth;
-    position: relative;
-    z-index: 10;
-    width: 100%;
-}
+
 
 
 .navbar{
@@ -34,7 +39,7 @@ body{
     top: 20px;                     /* stays fixed at top */
     left: 50%;                     /* move center of navbar to center of screen */
     transform: translateX(-50%); 
-    font-family: "Rubik", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -84,7 +89,10 @@ body{
 
 .logo a{
     color: white;
-    font-family: 'Space Mono';
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     text-decoration: none;
 }
 
@@ -103,7 +111,10 @@ body{
     color: white;
     text-align: center;
     font-size: 72px;
-    font-family: 'Space Mono';
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 .content h2{
     color: white;
@@ -117,8 +128,10 @@ body{
     color: white;
     padding-top: 26px;
     font-size: 18px;
-    font-family: 'Space Mono';
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 300;
+    font-style: normal;
     font-style: italic;
     text-align: center;
 
@@ -172,7 +185,10 @@ body{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: Consolas, Courier New, monospace;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   border: solid #404c5d 1px;
   font-size: 16px;
   color: rgb(255, 255, 255 ,1);
@@ -202,39 +218,32 @@ button:active {
   transition: 100ms;
 }
 
-.navbar ul a {
-  text-decoration: none;
+.navbar ul li a {
   position: relative;
-  z-index: 0;
+  display: inline-block;
+  padding: 4px 8px;
+  z-index: 1;
 }
 
-.navbar ul a::after {
+.navbar ul li a::after {
   content: "";
   position: absolute;
-  top: 0%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000, #00ff00, #0000ff);
-  background-size: 100% 100%;
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
+  background-size: 300% 300%;
+  filter: blur(25px);
+  border-radius: 50%;
+  opacity: 0;
   z-index: -1;
-  filter: blur(15px);
-  opacity: 0.5;
-  transition: opacity 0.5s;
+  transition: opacity 0.4s ease;
   animation: rotate-96 5s linear infinite;
-  border-radius: 100vmax;
-  width: 50px;
-  height: 50px;
 }
 
-.navbar ul a:hover::after {
+.navbar ul li a:hover::after {
   opacity: 1;
 }
 
-@keyframes rotate-96 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
