@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +8,7 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="utlity.css">
     <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="animation.css">
 </head>
 
 <body>
@@ -18,17 +18,17 @@
                 <a href="#">j4mes</a>
             </div>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="">Projects</a></li>
 
             </ul>
             <div class="reachOut"><button>Reach Out</button></div>
         </header>
 
-        <div class="home">
-            <div class="content">
+        <div class="home " id="home">
+            <div class="content ">
                 <h1>Hey, I'm <span class="sai">SAI</span><br>aSpiring <span class="frontend">Frontend</span> Developer
                 </h1>
                 <h2> A Kind of <span class="auto-type"></span></h2>
@@ -36,7 +36,7 @@
                     together to solve real problems</p>
             </div>
 
-            <div class="btn">
+            <div class="btn ">
                 <div class="buttons">
                     <button>Resume</button>
                     <button class="cBtn">Contact Me </button>
@@ -47,10 +47,10 @@
         </div>
 
 
-        <div class="about-header fds span-b">
+        <div class="about-header fds span-b fadeOut">
             <h1>About <span>Me</span></h1>
         </div>
-        <div class="abt-parent">
+        <div class="abt-parent " id="about">
             <div class="about">
                 <div class="left-img">
                     <img src="/images/final.png" alt="myself">
@@ -76,13 +76,13 @@
         </div>
 
 
-        <div class="about-header fds span-b">
+        <div class="about-header fds span-b fadeOut">
             <h1>My <span>Skills</span></h1>
         </div>
         <div class="about-para rub">
             <p>Here are some of the technologies that are part of my current stack</p>
         </div>
-        <div class="skills">
+        <div class="skills" id="skills">
             <div class="carousel">
                 <div class="carousel-track">
                     <div class="group">

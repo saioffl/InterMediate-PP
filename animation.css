@@ -1,0 +1,26 @@
+/* html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+#main {
+    scroll-snap-type: y mandatory;
+}
+
+
+.home,.abt-parent{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 60vh;
+}
+.skills {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 80vh;
+}
+
+ */
