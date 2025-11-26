@@ -1,41 +1,59 @@
-.carousel{
-    margin: 100px auto;
-    width: 90%;
+.carousel {
+    margin: 42px auto;
+    width: 55%;
     border: 5px solid red;
     display: flex;
-    overflow-x: auto;
-    gap: 1em;
+    overflow: hidden;
 }
-
 
 .carousel::-webkit-scrollbar {
     display: none;
 }
 
+.carousel-track {
+    display: flex;
+    animation: spin 20s linear infinite;
+    gap: 1em;
+    width: fit-content;
+}
 
-.group{
+.group {
     display: flex;
     align-items: center;
-    animation:  spin 5s infinite linear ;
     justify-content: center;
     gap: 1em;
     padding: 1em;
+    flex-shrink: 0;
 }
 
 .card {
-    flex: 0 0 5em;
-    height: 5em;
+    flex: 0 0 3em;
+    height: 3em;
     padding: 1em;
-    background: cornflowerblue;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: .2em;
+    border: 2px solid green;
     text-align: center;
     align-content: center;
 }
 
-
-
 @keyframes spin {
-    from {translate:0 ;} 
-    to {translate: -100%;}
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-20% - 0.8em)); }
+}
+
+
+.about-para {
+    text-align: center;   /* center inline-block children */
+}
+
+.about-para p {
+    display: inline-block;   /* shrink to text width */
+    border: 2px solid red;   /* (optional) so you can see the box */
+    color: #9a9a9a;
+    font-size: 14px;
+}
+
+.about-para p:hover{
+    color: rgb(172, 243, 113);
 }
