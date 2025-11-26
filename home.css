@@ -7,6 +7,7 @@
 *{
     margin:0px;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: black;
@@ -17,7 +18,7 @@ body{
     text-align: center;
     scroll-behavior: smooth;
     position: relative;
-    height: 100vh;
+    height: 100dvh;
     z-index: 10;
     
 }
@@ -59,7 +60,7 @@ body{
     backdrop-filter: blur(10px);       /* blur effect */
     -webkit-backdrop-filter: blur(10px);
 
-    border-radius: 20px;
+    border-radius: 110px;
     border: 1px solid rgba(255,255,255,0.1);
     border: 2px solid red;
 
@@ -117,7 +118,7 @@ body{
 .content h1{
     color: white;
     text-align: center;
-    font-size: 72px;
+    font-size: clamp(72px , 3vw , 5rem);
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;

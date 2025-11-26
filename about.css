@@ -6,10 +6,14 @@
     padding: 0;
 }
 
+
+.abt-parent{
+    height: 45dvh;
+}
 .about{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 .about-header {
     padding: 20px;
@@ -38,13 +42,23 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    max-width: 800px;  /* prevent narrow text */
+    max-width: 600px;  /* prevent narrow text */
 
     border: 2px solid red;
 }
 
 .left-content p{
-    padding: 20px;
+    color: #9a9a9a;
+    padding: min(0.6em , 6px);
 }
 
 
+.left-content h1{
+    color: #dee2e6;
+    font-size: 20px;
+}
+
+.left-content br{
+    
+    padding: 20px;
+}
