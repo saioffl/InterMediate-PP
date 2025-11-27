@@ -38,9 +38,21 @@
 
 
 .expand{
-    width: 20rem;
     position: relative;
-    top: 7rem;
+    top: 5rem;
     height: 7rem;
 }
 
+
+.flex{
+    display: flex;
+}
+
+
+.ai{
+    align-items: center;
+}
+
+.justify-btw{
+    justify-content: space-between;
+}

@@ -33,6 +33,8 @@
 
 .caseContent {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: 22%;
 }
@@ -44,6 +46,10 @@
 
 .caseContent h3{
     font-size: 12px;
+    color: white;
 }
 
-
+.caseContent button{
+    width: 100px;
+    height: auto;
+}
