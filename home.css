@@ -105,7 +105,7 @@ body{
 
 
 .content {
-    padding: 6rem;
+    padding: 5rem;
     align-items: center;
     display: inline-block;        /* or max-width: 700px */
     max-width: 1912px;      /* optional but recommended */
