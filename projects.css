@@ -3,6 +3,9 @@
 .projectLayer{
     display: flex;
     align-items: center;
+    width: fit-content;        /* shrink parent to content width */
+    margin: 0 auto;  
+    gap: 2rem;
     text-align: center;
 }
 
@@ -15,23 +18,32 @@
 
 
 
-
-.outerCase{
-    width: 20%;
+.outerCase {
+    width: 300px;
     height: 17rem;
-    padding: 20px;
+    padding: 7px;
 }
 
-.innerCase{
+
+.innerCase {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 8px;
 }
 
-.caseContent{
+.caseContent {
+    display: flex;
     width: 100%;
-    height: 35%;
-    
+    height: 22%;
+}
+
+
+.caseContent img {
+    width:2.2rem;
+}   
+
+.caseContent h3{
+    font-size: 12px;
 }
 
 

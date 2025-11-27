@@ -35,3 +35,12 @@
 .bd{
     border: 2px solid red;
 }
+
+
+.expand{
+    width: 20rem;
+    position: relative;
+    top: 7rem;
+    height: 7rem;
+}
+
