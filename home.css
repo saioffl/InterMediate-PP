@@ -56,17 +56,22 @@ body{
     justify-content: space-between;
     align-items: center;
 
-    background: rgba(0, 0, 0, 0.3);   /* transparent */
-    backdrop-filter: blur(10px);       /* blur effect */
+    background: rgba(0, 0, 0, 0.3);
+    /* background: rgb(179 94 213 / 30%); */
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-
     border-radius: 110px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border: 2px solid red;
 
     z-index: 999;
 }
 
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
 
 .navbar ul{
     display: flex;

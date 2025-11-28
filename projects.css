@@ -1,6 +1,7 @@
 
 
 .projectLayer{
+    
     display: flex;
     align-items: center;
     width: fit-content;        /* shrink parent to content width */
@@ -16,40 +17,243 @@
 }
 
 
+.projectBase{
+    height: 50dvh;
+}
 
-
-.outerCase {
-    width: 300px;
-    height: 17rem;
-    padding: 7px;
+.projectOuter{
+    padding: 2rem;
 }
 
 
-.innerCase {
-    width: 100%;
-    height: 100%;
-    padding: 8px;
-}
 
-.caseContent {
+
+
+.cardUI{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 22%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.plugin-card.futuristic {
+  --glow-gradient: linear-gradient(90deg, #00dc82, #0ff, #ff00ff);
+  --bg-dark: rgba(14, 17, 27, 0.8);
+  --text-main: #e6edf3;
+  --text-sub: #9ca3af;
+
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background: var(--bg-dark);
+  backdrop-filter: blur(1rem) saturate(1.4);
+  color: var(--text-main);
+  overflow: hidden;
+  max-width: 26rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.plugin-card.futuristic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 0.125rem;
+  border-radius: inherit;
+  background: var(--glow-gradient);
+  background-size: 300% 300%;
+  animation: borderFlow 6s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 0;
+}
+
+@keyframes borderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.plugin-card.futuristic:hover {
+  transform: translateY(-0.3rem) scale(1.02);
+  box-shadow: 0 0 2rem rgba(0, 220, 130, 0.4);
+}
+
+.card-header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.logo-svg {
+  width: 2.5rem;
+  height: auto;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00dc82, #0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-sub);
+}
+
+.card-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  color: var(--text-sub);
+}
+
+.stat-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  width: 2rem;
+  height: 2rem;
+  background: rgba(33, 38, 45, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: var(--text-sub);
+  transition:
+    background 0.3s ease,
+    transform 0.15s ease;
+}
+
+.action-btn:hover {
+  background: rgba(0, 220, 130, 0.2);
+  transform: scale(1.05);
+  color: var(--text-main);
+}
+
+.action-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.futuristic .title {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1.4rem;
+}
+
+.futuristic:hover .title {
+  border-right: 0.1em solid rgba(0, 220, 130, 0.75);
+  animation:
+    typewriter 2s steps(8) forwards,
+    caretBlink 0.75s steps(1) infinite;
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 8ch;
+  }
+}
+
+@keyframes caretBlink {
+  0%,
+  100% {
+    border-color: rgba(0, 220, 130, 0.75);
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.futuristic:hover .title {
+  animation:
+    typewriter 2s steps(8) forwards,
+    caretBlink 0.75s steps(1) infinite;
+  animation-fill-mode: forwards;
+}
+
+.futuristic:hover .title {
+  animation:
+    typewriter 2s steps(8) forwards,
+    caretBlink 0.75s steps(1) infinite;
+  animation-fill-mode: forwards;
+}
+
+.futuristic:hover .title.finished {
+  border-right: none;
+}
+
+.futuristic:hover .title {
+  border-right: 0.15em solid rgba(0, 220, 130, 0.75);
+  animation:
+    typewriter 2s steps(8) forwards,
+    caretBlink 0.75s steps(1) 0s infinite;
+}
+
+.futuristic:hover .title {
+  animation:
+    typewriter 2s steps(8) forwards,
+    caretBlink 0.75s steps(1) 0s infinite,
+    caretHide 0s linear 2s forwards;
+}
+
+@keyframes caretHide {
+  to {
+    border-right: none;
+  }
 }
 
 
-.caseContent img {
-    width:2.2rem;
-}   
-
-.caseContent h3{
-    font-size: 12px;
-    color: white;
-}
-
-.caseContent button{
-    width: 100px;
-    height: auto;
-}
