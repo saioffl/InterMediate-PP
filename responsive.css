@@ -1,5 +1,123 @@
-@media (max-width:1919px) {
+@media (max-width:480px) {
+    .content h1{
+        font-size: 34px;
+    }
+
+    .content h2{
+        font-size: 24px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+
     .logo{
         display: none;
     }
+
+    .menuBox{
+        display: block;
+    }
+
+    .navbar ul li a{
+        display: none;
+    }
+
+    .reachOut{
+        display: none;
+    }
+
+    .navbar ul{
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .about{
+        flex-direction: column;
+        gap: 2rem;
+        
+    }
+
+    .left-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .abt-parent{
+        height: 80dvh;
+    }
+
+    .cardUI{
+        flex-direction: column;
+    }
+
+    .projectBase{
+        height: 100dvh;
+    }
+
+    .navbar img{
+        width: 40px;
+    }
+
+    .left-content{
+        padding: 2rem;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width:635px) {
+    .logo{
+        display: none;
+    }
+
+    .abt-parent{
+        height: 60dvh;
+    }
+    .menuBox{
+        display: block;
+    }
+
+    .content h1{
+        font-size: 44px;
+    }
+
+    .content h2{
+        font-size: 34px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+
+    .navbar ul li a{
+        display: none;
+    }
+
+    .reachOut{
+        display: none;
+    }
+
+    .navbar ul{
+        display: block;
+        margin: 0 auto;
+    }
+    
+
+    .left-content p{
+        font-size: 12px;
+    }
+    .side-navbar{
+
+    }
+} */
+
+
+
+

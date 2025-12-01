@@ -12,10 +12,19 @@ autoType();
 
 
 
+const sideBar = document.querySelector('.side-navbar');
+const menuBtn = document.querySelector('.menuBtn');
+const closeBtn = document.querySelector('.closeBtn');
+
 function showSidebar() {
-    document.querySelector('.side-navbar').style.transform = 'translateX(0)';
+    sideBar.style.transform = 'translateX(0)';
+    menuBtn.style.display = 'none';
 }
 
 function hideSidebar() {
-    document.querySelector('.side-navbar').style.transform = 'translateX(100%)';
+    sideBar.style.transform = 'translateX(100%)';
+    menuBtn.style.display = 'block'; 
 }
+
+
+

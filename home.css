@@ -286,7 +286,7 @@ button:active {
     position: fixed;
     top: 0;
     right: 0;
-    width: 280px;
+    width: 50%;
     height: 100vh;                    /* full vertical menu */
     padding: 40px 30px;
 
@@ -318,6 +318,7 @@ button:active {
     flex-direction: column;
     justify-content: flex-start;
     gap: 3rem;
+    padding: 2rem;
 }
 
 .side-navbar ul li{
@@ -337,9 +338,10 @@ button:active {
     
 }
 .side-navbar ul li a{
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 700;
     font-style: normal;
+    font-family: "Space Grotesk", sans-serif;
     color: white;
     text-decoration: none;
 }
@@ -350,7 +352,7 @@ button:active {
 }
 
 
-.logo a{
+.side-navbar logo a{
     color: white;
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
@@ -361,6 +363,7 @@ button:active {
 
 
 .menuBox {
+    display: none;
     position: relative;
     margin-right: 20px;
 }
@@ -368,4 +371,13 @@ button:active {
 .closeBtn{
     color: white;
 }
+
+
+
+.closeBtn img{
+    width: 45px;
+}
+
+
+
 

@@ -40,6 +40,7 @@
 .left-content{
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 4rem;
     max-width: 600px;  /* prevent narrow text */
@@ -48,7 +49,8 @@
 }
 
 .left-content p{
-    color: #9a9a9a;
+    
+    color: #c5fff8;
     padding: min(0.6em , 6px);
 }
 
