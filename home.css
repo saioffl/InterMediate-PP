@@ -64,7 +64,7 @@ body{
     -webkit-backdrop-filter: blur(20px);
     border-radius: 110px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border: 2px solid red;
+    
 
     z-index: 999;
 }
@@ -118,7 +118,7 @@ body{
     max-width: 1912px;      /* optional but recommended */
     margin: 0 auto;        /* THIS centers the box */
     margin-top: 200px;     /* push below navbar */
-    border: 2px solid red; /* your border */
+    /* border: 2px solid red; your border */
     text-align: center;    /* centers text inside */
 }
 
@@ -171,7 +171,7 @@ body{
     justify-content: center;
     gap: 80px;
     padding: 10px 10px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 0 auto;
     margin-top: 2rem;
 }

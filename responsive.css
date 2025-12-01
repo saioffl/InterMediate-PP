@@ -1,13 +1,17 @@
-@media (max-width:480px) {
+@media (max-width:360px) {
     .content h1{
-        font-size: 34px;
+        font-size: 28px;
+    }
+
+    .content{
+        padding: 3rem;
     }
 
     .content h2{
-        font-size: 24px;
+        font-size: 14px;
     }
     .content p{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .logo{
@@ -20,6 +24,11 @@
 
     .navbar ul li a{
         display: none;
+    }
+
+    .navbar{
+        top: 40px;
+        left: 55%;
     }
 
     .reachOut{
@@ -44,7 +53,7 @@
     }
 
     .abt-parent{
-        height: 80dvh;
+        height: 100dvh;
     }
 
     .cardUI{
@@ -60,9 +69,25 @@
     }
 
     .left-content{
-        padding: 2rem;
+        padding: 4rem;
     }
+
+    .buttons button{
+        width: 124px;
+    }
+
+    .buttons{
+        margin-top: 0;
+    }
+
+    .home{
+        height: 80dvh;
+    }
+
+
+
 }
+
 
 
 
